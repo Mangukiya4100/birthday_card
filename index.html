@@ -524,7 +524,7 @@
         <div id="title-wrapper">
             <div id="title-line"></div>
             <div class="title-for">For</div>
-            <div class="title-name shimmer-anim">Aqsa</div>
+            <div class="title-name shimmer-anim">Preshita</div>
             <div class="title-sub">on your most beautiful day</div>
         </div>
         <div class="title-symbols" id="title-symbols">✦&nbsp;&nbsp;&nbsp;───────&nbsp;&nbsp;&nbsp;♡&nbsp;&nbsp;&nbsp;───────&nbsp;&nbsp;&nbsp;✦</div>
@@ -552,7 +552,7 @@
                             </div>
 
                             <div class="gold-line"></div>
-                            <div class="card-front-name shimmer-anim">Aqsa</div>
+                            <div class="card-front-name shimmer-anim">Preshita</div>
                             <div class="card-front-sub">Happy Birthday, beautiful ✨</div>
                             <div class="pulse-dot"></div>
                             <div class="card-hint">✦ click to open ✦</div>
@@ -570,7 +570,7 @@
                                 Not loudly. Not with fanfare.<br>
                                 Just by being exactly who they are.<br><br>
                                 You did that.<br><br>
-                                Happy Birthday, Aqsa. 🌹<br>
+                                Happy Birthday, Preshita. 🌹<br>
                                 I hope today feels as extraordinary<br>
                                 as you are.
                             </div>
@@ -615,7 +615,7 @@
                     <div class="slayer s4"></div>
                     <div class="slayer s5">
                         <div class="s5-text">
-                            <div class="s5-name">Aqsa</div>
+                            <div class="s5-name">Preshita</div>
                             <div class="s5-sub">the one worth waiting for</div>
                         </div>
                         <div class="s5-hover">💖</div>
@@ -925,7 +925,7 @@
         let kBuf = '';
         window.addEventListener('keydown', e => {
             kBuf += e.key.toLowerCase();
-            if(kBuf.includes('aqsa')) {
+            if(kBuf.includes('preshita')) {
                 kBuf = ''; burst(W/2, H/2, 200, {shapes:['circle','star4','heart'], colors:['251,111,146','255,194,209','205,180,219'], speedMin:3, speedMax:15, decay:0.4, gravity:0.05, sizeMin:2, sizeMax:8, lifeMin:80, lifeMax:160});
                 let flash = document.getElementById('easter-flash'); flash.style.opacity = '0.2'; setTimeout(()=>flash.style.opacity='0', 100);
                 let em = document.getElementById('easter-msg'); em.classList.add('show'); setTimeout(()=>em.classList.remove('show'), 3000);
@@ -944,9 +944,9 @@
         // Visibility API
         document.addEventListener('visibilitychange', () => {
             if(document.hidden) {
-                window.vInt = setInterval(()=> document.title = document.title.includes('Happy') ? "💌 Open your gift..." : "🎂 Happy Birthday Aqsa!", 2000);
+                window.vInt = setInterval(()=> document.title = document.title.includes('Happy') ? "💌 Open your gift..." : "🎂 Happy Birthday Preshita!", 2000);
             } else {
-                clearInterval(window.vInt); document.title = "For Aqsa ✨";
+                clearInterval(window.vInt); document.title = "For Preshita ✨";
                 setTimeout(() => {
                     const m = document.querySelector('.main-title-wrap');
                     if(m && !m.parentElement.classList.contains('hidden')) {
@@ -1129,7 +1129,7 @@
                 const bdg = document.getElementById('gold-badge'); bdg.classList.add('visible');
                 const d = new Date(); const mNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                 const suff = (d.getDate()%10==1&&d.getDate()!=11)?'st':(d.getDate()%10==2&&d.getDate()!=12)?'nd':(d.getDate()%10==3&&d.getDate()!=13)?'rd':'th';
-                const str = `${mNames[d.getMonth()]} ${d.getDate()}${suff}`;
+                const str = "10th May";
                 let c=0; let sp = document.getElementById('badge-val');
                 let iv = setInterval(()=>{ sp.innerText+=str[c]; c++; if(c>=str.length) {clearInterval(iv); setTimeout(()=>document.getElementById('db-cursor').style.display='none', 1500);} }, 60);
             }, 1600);
@@ -1171,7 +1171,7 @@
                 setTimeout(() => {
                     document.getElementById('main-letter-content').classList.add('show-letter');
                     // Salutation
-                    let t="My dearest Aqsa,"; let c=0; let dH = document.getElementById('type-sal'); dH.innerText='';
+                    let t="My dearest Preshita,"; let c=0; let dH = document.getElementById('type-sal'); dH.innerText='';
                     let cl = setInterval(()=>{ dH.innerText+=t[c]; c++; if(c>=t.length){ clearInterval(cl); document.getElementById('sal-cur').style.display='none'; setTimeout(()=>document.querySelector('.ml-p1').classList.add('show'), 300); setTimeout(()=>document.querySelector('.ml-p2').classList.add('show'), 800); setTimeout(()=>document.querySelector('.ml-p3').classList.add('show'), 1300); setTimeout(()=>document.querySelector('.ml-p4').classList.add('show'), 1800); setTimeout(()=>document.querySelector('.ml-div').style.opacity=1, 2300); setTimeout(()=>{document.querySelector('.ml-closing').style.opacity=1; document.querySelector('.ml-svg-line').style.opacity=1;}, 2800); setTimeout(()=>document.querySelectorAll('.ml-rh').forEach((h,i)=>setTimeout(()=>h.classList.add('pop'), i*350)), 3600); } }, 70);
                 }, 50);
             }, 1400);
